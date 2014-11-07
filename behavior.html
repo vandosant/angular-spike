@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Behavior demo</title>
+    <link rel="stylesheet" href="vendor/css/foundation.min.css">
+</head>
+<body>
+
+<div ng-app="behaviorApp">
+    <div ng-controller="AppCtrl">
+        <div enter="loadMoreTweets()">Load</div>
+        <div enter="deleteTweets()">Delete</div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="vendor/js/angular.js"></script>
+<script type="text/javascript" src="app/js/behaviorApp.js"></script>
+</body>
+</html>
